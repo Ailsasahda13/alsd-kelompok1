@@ -9,4 +9,8 @@ public class MataKuliahKel1 {
         namaMK = namaMataKuliah;
         sks = sks;
     }
+
+    void tampilMataKuliah() {
+        System.out.println(kodeMK + " ");
+    }
 }

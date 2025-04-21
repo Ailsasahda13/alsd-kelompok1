@@ -9,4 +9,8 @@ public class MahasiswaKel1 {
         nama = name;
         programStudi = prodi;
     }
+
+    void tampilkanMahasiswa() {
+        System.out.println(NIM + " " + nama + " ");
+    }
 }
