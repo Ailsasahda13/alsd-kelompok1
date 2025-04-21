@@ -1,31 +1,27 @@
 public class PenilaianKel1 {
- 
     MahasiswaKel1 mhs;
-    MataKuliahKel1 MK;
-    double nilaiTugas;
-    double nilaiUTS;
-    double nilaiUAS;
-    double nilaiAkhir;
+    MataKuliahKel1 mk;
+    double tugas;
+    double uts;
+    double uas;
 
-    PenilaianKel1(MahasiswaKel1 mhs, MataKuliahKel1 MK, double nilTugas, double nilUTS, double nilUAS) {
-        MahasiswaKel1 = mhs;
-        MataKuliahKel1 = MK;
-        nilaiTugas = nilTugas;
-        nilaiUTS = nilUTS;
-        nilaiUAS = nilaiUAS;
+    PenilaianKel1(MahasiswaKel1 mahasiswa, MataKuliahKel1 matkul, double nilaiTugas, double nilaiUTS, double nilaiUAS) {
+        mhs = mahasiswa;
+        mk = matkul;
+        tugas = nilaiTugas;
+        uts = nilaiUTS;
+        uas = nilaiUAS;
     }
 
-    void hitungNIlaiAkhir() {
-        return (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+    double nilaiAkhir() {
+        return (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
     }
 
     void tampilkanData() {
-        mhs.tampilkanMahasiswa();
-        MK.tampilMataKuliah();
-        System.out.println();
+        mhs.tampilkanDataMahasiswa();
     }
 
     void tampilkanNilai() {
-        System.out.println(mhs.NIM + " " + mhs.nama + " " + MK.namaMK + " " + nilaiTugas + " " + nilaiUTS + " " + nilaiUAS + " " + nilaiAkhir());
+        System.out.println(mhs.NIM + " | " + mhs.nama + " | " + mk.namaMK + " | " + "Nilai Akhir : " + nilaiAkhir());
     }
 }

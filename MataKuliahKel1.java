@@ -4,13 +4,13 @@ public class MataKuliahKel1 {
     String namaMK;
     int sks;
 
-    MataKuliahKel1(String kodeMataKuliah, String namaMataKuliah, int sks) {
+    MataKuliahKel1(String kodeMataKuliah, String namaMataKuliah, int sksValue) {
         kodeMK = kodeMataKuliah;
         namaMK = namaMataKuliah;
-        sks = sks;
+        sks = sksValue;
     }
 
-    void tampilMataKuliah() {
-        System.out.println(kodeMK + " ");
+    void tampilkanMataKuliah() {
+        System.out.println("Kode MK : " + kodeMK + " | " + "Nama MK : " + namaMK + " | " + "SKS : " + sks + " ");
     }
 }

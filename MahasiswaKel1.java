@@ -1,16 +1,15 @@
 public class MahasiswaKel1 {
-
     String NIM;
     String nama;
-    String programStudi;
+    String prodi;
 
-    MahasiswaKel1(String nim, String name, String prodi) {
-        NIM = nim;
-        nama = name;
-        programStudi = prodi;
+    MahasiswaKel1(String nimMhs, String namaMhs, String prodiMhs) {
+        NIM = nimMhs;
+        nama = namaMhs;
+        prodi = prodiMhs;
     }
 
-    void tampilkanMahasiswa() {
-        System.out.println(NIM + " " + nama + " ");
+    void tampilkanDataMahasiswa() {
+        System.out.println("NIM: " + NIM + " | Nama: " + nama + " | Prodi: " + prodi);
     }
 }
