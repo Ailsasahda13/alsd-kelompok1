@@ -45,7 +45,6 @@ public class siakadMahasiswaKel1 {
     }
 
     static void siapkanData() {
-         penilaians = new PenilaianKel1[5];
 
         MahasiswaKel1 m1 = new MahasiswaKel1("22001", "Ali Rahman", "Informatika");
         MahasiswaKel1 m2 = new MahasiswaKel1("22002", "Budi Santoso", "Informatika");
@@ -55,6 +54,7 @@ public class siakadMahasiswaKel1 {
         MataKuliahKel1 mk2 = new MataKuliahKel1("MK002", "Basis Data", 3);
         MataKuliahKel1 mk3 = new MataKuliahKel1("MK003", "Desain Web", 3);
 
+        penilaians = new PenilaianKel1[5];
         penilaians[0] = new PenilaianKel1(m1, mk1, 80, 85, 90);
         penilaians[1] = new PenilaianKel1(m1, mk2, 60, 75, 70);
         penilaians[2] = new PenilaianKel1(m2, mk1, 75, 70, 80);
