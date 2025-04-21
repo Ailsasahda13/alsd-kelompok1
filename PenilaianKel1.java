@@ -16,7 +16,7 @@ public class PenilaianKel1 {
     }
 
     void hitungNIlaiAkhir() {
-        return (tugas*0.3) + (UTS*0.3) + (UAS*0.4);
+        return (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
     }
 
     void tampilkanData() {
